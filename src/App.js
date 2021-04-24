@@ -15,7 +15,6 @@ const App = () => {
       .then(data => {
         setMyData(data);
         setLoaded(true)
-        console.log("Get ran");
       })
       .catch(err => {
         console.error(err);

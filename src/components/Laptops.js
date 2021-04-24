@@ -5,7 +5,7 @@ const Laptops = ({ data }) => {
     return (
         <div>
             {data.map((item, index) => (
-                <div className="laptops-container">
+                <div key={index} className="laptops-container">
                     <Laptop name={item.name} brand={item.brand} weigth={item.weigth}/>
                 </div>
             ))}
